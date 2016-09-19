@@ -41,7 +41,7 @@ resource "aws_instance" "web" {
 	ami = "ami-db24d8b6"
 	instance_type = "t2.micro"
 	subnet_id = "subnet-097d9235"
-	count = 1
+	count = 5000
 	vpc_security_group_ids = ["sg-74a4d00e"]
 	tags  {
 		Identity = "velocity-e4da3b7fbbce2345d7772b0674a318d5"
